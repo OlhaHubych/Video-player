@@ -1,0 +1,99 @@
+.container  {
+    text-align: center;
+}
+img {
+    width: 100%;
+    height: auto;
+    opacity: 90%;
+}
+img:hover {
+    opacity: 1; 
+}
+.img-container {
+    position: relative;
+    width: 400px;
+    display: inline-block;
+}
+.btn-video {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+    
+}
+.btn-video:hover {
+    background-color: black;
+}
+.badge {
+    position: absolute;
+    top: 16px;
+    left: 17px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    background: black;
+    color: white;
+    transform: rotate(-30deg);
+}
+.player {
+    position: relative;
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+
+}
+#video {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-color: lightgray;
+    
+    
+}
+.controls {
+    background-color: black;
+    overflow: hidden;
+    position: relative;
+    top: -9px;
+    margin: 0 auto;
+    width: 100%; 
+    
+}
+.progressBar {
+    height: 2px;
+    background-color: #4B515D;
+    position: relative;
+    top: -12px;
+    width: 0%;
+    transition: width 0.5s linear;
+}
+.btn-contrl {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 0 5px;
+    font-size: 12px;
+    border-radius: 0%;
+    background-color: black;
+    border-color: black;
+    height: 40px;
+    outline: none;
+    width: 83px;
+}
+.btn-contrl:hover {
+    background-color: lightslategrey;
+    border-left: lightslategray;
+}
+#volumeInc, #volumeDecr, #volumeRange, #fullScreen {
+    float: right;
+}
+#volumeRange {
+    width: 50px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Olha Hubych">
+    
+    <title>Video player</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="player">
+        <video id="video">
+            <source src="video/GOPR6239_1.mov" poster="./img/turtle.png">
+        </video>
+        <div class="progressBar" id="progressBar"></div>
+        <div class="controls" >
+            <button id="play" class="btn-contrl">Play</button>
+            <button id="stop" class="btn-contrl">Stop</button>
+            <button id="rewindForward" class="btn-contrl">&gt;&gt;&gt;</button>
+            <button id="rewindBack" class="btn-contrl">&lt;&lt;&lt;</button>
+            <button id="fullScreen" class="btn-contrl">&#128386;</button>
+            <button id="volumeInc" class="btn-contrl">V+</button>
+            <button id="volumeRange" class="btn-contrl"></button>
+            <button id="volumeDecr" class="btn-contrl">V-</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>See other videos</h1>
+        <div class="img-container">
+            <img src="img/forest.png" alt="Forest">
+            <span class="badge">No sound</span>
+            <button data-src="video/181015_Extra_DanangDrone_004.mp4" id="btn-video" class="btn-video">Forest</button>
+        </div>
+        <div class="img-container">
+            <img src="img/leaf.png" alt="Leaf">
+            <span class="badge">No sound</span>
+            <button data-src="video/Dewdrops_1.mp4" id="btn-video" class="btn-video">Leaf</button>
+        </div>
+        <div class="img-container">
+            <img src="img/road.png" alt="Road">
+            <span class="badge">No sound</span>
+            <button data-src="video/180607_A_101.mp4" id="btn-video" class="btn-video">Road</button>
+        </div>
+        <div class="img-container">
+            <img src="img/turtle.png" alt="Turtle">
+            <span class="badge">With sound</span>
+            <button data-src="video/GOPR6239_1.mov" id="btn-video" class="btn-video">Turtle</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy;&nbsp;Olha Hubych <br> Free video &mdash; www.videvo.net</p>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
