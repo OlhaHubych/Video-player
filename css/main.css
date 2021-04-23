@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+}
 .container  {
     text-align: center;
 }
@@ -27,7 +35,6 @@ img:hover {
     cursor: pointer;
     border-radius: 5px;
     outline: none;
-    
 }
 .btn-video:hover {
     background-color: black;
@@ -43,19 +50,14 @@ img:hover {
     transform: rotate(-30deg);
 }
 .player {
-    position: relative;
-    text-align: center;
     width: 75%;
     margin: 0 auto;
-
 }
 #video {
     width: 100%;
     height: auto;
     position: relative;
     background-color: lightgray;
-    
-    
 }
 .controls {
     background-color: black;
@@ -63,8 +65,9 @@ img:hover {
     position: relative;
     top: -9px;
     margin: 0 auto;
-    width: 100%; 
-    
+    width: 100%;
+    display: flex;
+    justify-content: center; 
 }
 .progressBar {
     height: 2px;
