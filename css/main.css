@@ -4,7 +4,6 @@
 body {
     margin: 0;
     padding: 0;
-    width: fit-content;
 }
 .container  {
     text-align: center;
@@ -21,6 +20,14 @@ img:hover {
     position: relative;
     width: 400px;
     display: inline-block;
+}
+@media screen and (max-width: 425px) {
+    body {
+        width: fit-content;
+    }
+    .img-container {
+        width: 80%;
+    } 
 }
 .btn-video {
     position: absolute;
@@ -50,14 +57,66 @@ img:hover {
     transform: rotate(-30deg);
 }
 .player {
-    width: 75%;
-    margin: 0 auto;
+    width: 85%;
+    height: fit-content;
+    margin: 10px auto;
 }
 #video {
     width: 100%;
-    height: auto;
+    
     position: relative;
     background-color: lightgray;
+    object-fit: cover;
+}
+@media screen and (max-width: 425px) {
+    #video {
+        height: 325px;
+    }
+}
+@media screen and (min-width: 426px) {
+    #video {
+        height: 225px;
+    }
+}
+@media screen and (min-width: 526px) {
+    #video {
+        height: 300px;
+    }
+}
+@media screen and (min-width: 626px) {
+    #video {
+        height: 325px;
+    }
+}
+@media screen and (min-width: 726px) {
+    #video {
+        height: 400px;
+    }
+}
+@media screen and (min-width: 826px) {
+    #video {
+        height: 425px;
+    }
+}
+@media screen and (min-width: 926px) {
+    #video {
+        height: 500px;
+    }
+}
+@media screen and (min-width: 1026px) {
+    #video {
+        height: 525px;
+    }
+}
+@media screen and (min-width: 1126px) {
+    #video {
+        height: 600px;
+    }
+}
+@media screen and (min-width: 1226px) {
+    #video {
+        height: 625px;
+    }
 }
 .controls {
     background-color: black;
